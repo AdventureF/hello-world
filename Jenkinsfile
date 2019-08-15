@@ -4,6 +4,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'apt install curl'
+                sh 'curl www.baidu.com'
                 sh 'mvn --version'
             }
         }
