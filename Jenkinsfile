@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh 'apt install curl'
                 sh 'curl www.baidu.com'
+                sh 'echo my lord'
                 sh 'mvn --version'
             }
         }
